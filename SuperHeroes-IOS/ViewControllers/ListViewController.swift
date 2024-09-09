@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SuperHeroes-IOS
+//  SuperHeroes-iOS
 //
 //  Created by Mañanas on 4/9/24.
 //
@@ -19,12 +19,25 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         tableView.dataSource = self
         
-        SuperHeroProvider.findSuperHeroesByName("Super", withResult: { [unowed self] results in
+        /*SuperHeroProvider.findSuperHeroesByName("Super", withResult: { [unowned self] results in
             self.superHeroList = results
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        })
+        })*/
+        
+        Task {
+            do {
+                let results = try await SuperHeroProvider.findSuperHeroesByName("x")
+                
+                self.superHeroList = results
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,7 +55,16 @@ class ListViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showDetail") {
+            let viewController = segue.destination as! DetailViewController
+            
+            let indexPath = tableView.indexPathForSelectedRow!
+            
+            viewController.superHero = superHeroList[indexPath.row]
+            
+            tableView.deselectRow(at: indexPath, animated: false)
+        }
+    }
     
 }
-

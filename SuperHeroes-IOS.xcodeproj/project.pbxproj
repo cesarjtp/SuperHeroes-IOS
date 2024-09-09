@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C4CC1912C89C61A00F8D5BB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4CC1902C89C61A00F8D5BB /* DetailViewController.swift */; };
 		6CD7615D2C884A7A00AA567B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7615C2C884A7A00AA567B /* AppDelegate.swift */; };
 		6CD7615F2C884A7A00AA567B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7615E2C884A7A00AA567B /* SceneDelegate.swift */; };
-		6CD761612C884A7A00AA567B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD761602C884A7A00AA567B /* ViewController.swift */; };
+		6CD761612C884A7A00AA567B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD761602C884A7A00AA567B /* ListViewController.swift */; };
 		6CD761642C884A7A00AA567B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CD761632C884A7A00AA567B /* Base */; };
 		6CD761662C884A7A00AA567B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD761652C884A7A00AA567B /* Assets.xcassets */; };
 		6CD761692C884A7A00AA567B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CD761682C884A7A00AA567B /* Base */; };
+		6CD761732C884D1800AA567B /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD761722C884D1800AA567B /* SuperHero.swift */; };
+		6CD761752C884F6600AA567B /* SuperHeroProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD761742C884F6600AA567B /* SuperHeroProvider.swift */; };
+		6CD7617A2C887FBF00AA567B /* SuperHeroViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD761792C887FBF00AA567B /* SuperHeroViewCell.swift */; };
+		6CD7617C2C8880BE00AA567B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7617B2C8880BE00AA567B /* Constants.swift */; };
+		6CD7617E2C88821C00AA567B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7617D2C88821C00AA567B /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C4CC1902C89C61A00F8D5BB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6CD761592C884A7A00AA567B /* SuperHeroes-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperHeroes-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD7615C2C884A7A00AA567B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CD7615E2C884A7A00AA567B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6CD761602C884A7A00AA567B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CD761602C884A7A00AA567B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		6CD761632C884A7A00AA567B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CD761652C884A7A00AA567B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD761682C884A7A00AA567B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD7616A2C884A7A00AA567B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CD761722C884D1800AA567B /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
+		6CD761742C884F6600AA567B /* SuperHeroProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroProvider.swift; sourceTree = "<group>"; };
+		6CD761792C887FBF00AA567B /* SuperHeroViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewCell.swift; sourceTree = "<group>"; };
+		6CD7617B2C8880BE00AA567B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6CD7617D2C88821C00AA567B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		6CD7615B2C884A7A00AA567B /* SuperHeroes-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				6CD761782C887EFE00AA567B /* View */,
+				6CD761772C886AB800AA567B /* ViewCells */,
+				6CD761762C885F7F00AA567B /* Utils */,
+				6CD761712C884CED00AA567B /* ViewControllers */,
+				6CD761702C884CC800AA567B /* Data */,
 				6CD7615C2C884A7A00AA567B /* AppDelegate.swift */,
 				6CD7615E2C884A7A00AA567B /* SceneDelegate.swift */,
-				6CD761602C884A7A00AA567B /* ViewController.swift */,
-				6CD761622C884A7A00AA567B /* Main.storyboard */,
 				6CD761652C884A7A00AA567B /* Assets.xcassets */,
-				6CD761672C884A7A00AA567B /* LaunchScreen.storyboard */,
 				6CD7616A2C884A7A00AA567B /* Info.plist */,
 			);
 			path = "SuperHeroes-IOS";
+			sourceTree = "<group>";
+		};
+		6CD761702C884CC800AA567B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6CD761722C884D1800AA567B /* SuperHero.swift */,
+				6CD761742C884F6600AA567B /* SuperHeroProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6CD761712C884CED00AA567B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CD761602C884A7A00AA567B /* ListViewController.swift */,
+				6C4CC1902C89C61A00F8D5BB /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6CD761762C885F7F00AA567B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6CD7617B2C8880BE00AA567B /* Constants.swift */,
+				6CD7617D2C88821C00AA567B /* UIImageViewExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6CD761772C886AB800AA567B /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6CD761792C887FBF00AA567B /* SuperHeroViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		6CD761782C887EFE00AA567B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CD761672C884A7A00AA567B /* LaunchScreen.storyboard */,
+				6CD761622C884A7A00AA567B /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CD761612C884A7A00AA567B /* ViewController.swift in Sources */,
+				6C4CC1912C89C61A00F8D5BB /* DetailViewController.swift in Sources */,
+				6CD7617A2C887FBF00AA567B /* SuperHeroViewCell.swift in Sources */,
+				6CD761612C884A7A00AA567B /* ListViewController.swift in Sources */,
 				6CD7615D2C884A7A00AA567B /* AppDelegate.swift in Sources */,
+				6CD761752C884F6600AA567B /* SuperHeroProvider.swift in Sources */,
+				6CD7617C2C8880BE00AA567B /* Constants.swift in Sources */,
 				6CD7615F2C884A7A00AA567B /* SceneDelegate.swift in Sources */,
+				6CD7617E2C88821C00AA567B /* UIImageViewExtension.swift in Sources */,
+				6CD761732C884D1800AA567B /* SuperHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

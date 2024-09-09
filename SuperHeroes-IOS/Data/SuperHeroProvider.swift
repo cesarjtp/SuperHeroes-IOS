@@ -1,6 +1,6 @@
 //
 //  SuperHeroProvider.swift
-//  SuperHeroes-IOS
+//  SuperHeroes-iOS
 //
 //  Created by Mañanas on 4/9/24.
 //
@@ -27,6 +27,22 @@ class SuperHeroProvider {
             }
         }
         task.resume()
+    }
+    
+    static func findSuperHeroesByName(_ name: String) async throws -> [SuperHero] {
+        guard let url = URL(string: "\(Constants.BASE_URL)search/\(name)") else {
+            print("URL not valid")
+            return []
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        if let str = String(data: data, encoding: .utf8) {
+            print("Successfully decoded: \(str)")
+        }
+        
+        let result = try JSONDecoder().decode(SuperHeroResponse.self, from: data)
+        return result.results
     }
     
 }
