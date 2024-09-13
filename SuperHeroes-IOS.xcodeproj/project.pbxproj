@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C4CC1912C89C61A00F8D5BB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4CC1902C89C61A00F8D5BB /* DetailViewController.swift */; };
+		6C6DEB922C91BD9400A15662 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DEB912C91BD9400A15662 /* UIVIewExtension.swift */; };
 		6CD7615D2C884A7A00AA567B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7615C2C884A7A00AA567B /* AppDelegate.swift */; };
 		6CD7615F2C884A7A00AA567B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7615E2C884A7A00AA567B /* SceneDelegate.swift */; };
 		6CD761612C884A7A00AA567B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD761602C884A7A00AA567B /* ListViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		6C4CC1902C89C61A00F8D5BB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6C6DEB912C91BD9400A15662 /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
 		6CD761592C884A7A00AA567B /* SuperHeroes-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperHeroes-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD7615C2C884A7A00AA567B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CD7615E2C884A7A00AA567B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				6CD7617B2C8880BE00AA567B /* Constants.swift */,
 				6CD7617D2C88821C00AA567B /* UIImageViewExtension.swift */,
+				6C6DEB912C91BD9400A15662 /* UIVIewExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				6CD7617C2C8880BE00AA567B /* Constants.swift in Sources */,
 				6CD7615F2C884A7A00AA567B /* SceneDelegate.swift in Sources */,
 				6CD7617E2C88821C00AA567B /* UIImageViewExtension.swift in Sources */,
+				6C6DEB922C91BD9400A15662 /* UIVIewExtension.swift in Sources */,
 				6CD761732C884D1800AA567B /* SuperHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

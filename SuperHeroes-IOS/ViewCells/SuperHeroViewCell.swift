@@ -24,6 +24,7 @@ class SuperHeroViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        cardView.roundCorners(radius: 8)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
